@@ -20,19 +20,22 @@ Two independent modeling/actuation approaches are implemented and kept in separa
 │   ├── Segway_Robot_Using_LQR_Controller_By_Force.slx         # Simulink model: cart-pole plant + LQR state-feedback controller
 │   ├── Segway_Robot_Using_PID_Controller_Block_By_Force.slx   # Simulink model: cart-pole plant + PID Controller block
 │   ├── Segway_Robot_Using_LQR_Controller_By_Force.mp4         # Recorded simulation (LQR, manually chosen Q/R)
+│   ├── Segway_Robot_Using_LQR_Controller_By_Force.gif         # GIF preview of the above, for inline README embedding
 │   └── Genetic Algorithm for LQR/
 │       ├── Calculating_LQR_Gain_By_Force.m                    # Same plant model, loaded with the GA-optimized Q, R
 │       ├── GA_Optimization_for_LQR.m                          # Multi-objective GA (gamultiobj) that searches Q, R for the LQR gain
 │       ├── multiObjectiveFunction.m                           # Objective function: runs the Simulink model and returns ITAE cost for position & angle
 │       ├── Segway_Robot_Using_LQR_Controller_By_Force.slx     # Simulink model used by the GA as its plant/controller under test
 │       ├── Segway_Robot_Using_LQR_Controller_By_Force.mp4     # Recorded simulation (LQR, GA-optimized Q/R)
+│       ├── Segway_Robot_Using_LQR_Controller_By_Force_GA.gif  # GIF preview of the above, for inline README embedding
 │       └── GA_Results/
 │           ├── GA_Pareto_Graph.png                            # Pareto front (Cost1 = ITAE position vs Cost2 = ITAE angle)
 │           └── GA_Final_Results.png                           # Table of Pareto-optimal (q1..q4, r, K, Cost1, Cost2) solutions
 ├── By Torque Approach/
 │   ├── Tuning_PID_Gains.m                                     # Transfer-function model (torque input) + pidtune -> PID gains
 │   ├── Self_Balancing_Robot_Using_PID_Controller_Manual_Tuning.slx  # Simulink model: wheeled-chassis plant + PID controller
-│   └── Segway_Robot_Using_PID_Controller_By_Torque.mp4        # Recorded simulation (PID, torque actuation)
+│   ├── Segway_Robot_Using_PID_Controller_By_Torque.mp4        # Recorded simulation (PID, torque actuation)
+│   └── Segway_Robot_Using_PID_Controller_By_Torque.gif        # GIF preview of the above, for inline README embedding
 ├── Complete_Project_Report.pdf                                 # Full project report (theory, derivations, results)
 └── Final_Project_Presentation.pptx                             # Final project presentation slides
 ```
@@ -112,21 +115,27 @@ Here the Segway is modeled with wheel and chassis parameters (chassis mass, whee
 - **`Complete_Project_Report.pdf`** — full write-up of the mathematical modeling (both cart-pole and wheeled-chassis derivations), controller design, GA-based optimization methodology, and simulation results.
 - **`Final_Project_Presentation.pptx`** — condensed slide-deck summary of the project.
 
-## Simulation Results (Recorded Videos)
+## Simulation Results (Animated Previews)
 
-The `.mp4` files in each folder are recordings of the corresponding Simulink simulation (Scope/animation output) and are included directly in this repository. If your Markdown viewer supports inline video (e.g., GitHub does **not** render `<video>` tags in READMEs, but the links below let you preview/download the file), you can view them here:
+GitHub does not render `<video>` tags or play `.mp4` files inline inside a README, so the recordings below are embedded as GIF previews (converted from the original `.mp4` files, which are also kept in this repository at full quality — see the links under each preview).
 
 ### By Force Approach — LQR Controller (Manually Tuned Q, R)
 
-https://github.com/Preetamk97/Balance-Control-of-Segway-Robot-Using-Classical-And-Mordern-Control-Techniques/raw/main/By%20Force%20Approach/Segway_Robot_Using_LQR_Controller_By_Force.mp4
+![LQR Controller Simulation - Manually Tuned Q,R](By%20Force%20Approach/Segway_Robot_Using_LQR_Controller_By_Force.gif)
+
+Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
 ### By Force Approach — LQR Controller (GA-Optimized Q, R)
 
-https://github.com/Preetamk97/Balance-Control-of-Segway-Robot-Using-Classical-And-Mordern-Control-Techniques/raw/main/By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force.mp4
+![LQR Controller Simulation - GA Optimized Q,R](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force_GA.gif)
+
+Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
 ### By Torque Approach — PID Controller
 
-https://github.com/Preetamk97/Balance-Control-of-Segway-Robot-Using-Classical-And-Mordern-Control-Techniques/raw/main/By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.mp4
+![PID Controller Simulation - Torque Approach](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.gif)
+
+Full-quality video: [`Segway_Robot_Using_PID_Controller_By_Torque.mp4`](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.mp4)
 
 ### GA Optimization Results
 
@@ -138,8 +147,6 @@ https://github.com/Preetamk97/Balance-Control-of-Segway-Robot-Using-Classical-An
 
 ![GA Final Results](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/GA_Results/GA_Final_Results.png)
 
-> Tip: clone the repository and open the `.mp4` files locally (or open them directly on GitHub's file view) for smooth playback — GitHub's own file preview page plays `.mp4` files inline even though the README embed above is just a link.
-
 ## Author
 
-Pritam Kundan ([preetamk97@gmail.com](mailto:preetamk97@gmail.com))
+Pritam Ranjan Kalita ([preetamk97@gmail.com](mailto:preetamk97@gmail.com))
