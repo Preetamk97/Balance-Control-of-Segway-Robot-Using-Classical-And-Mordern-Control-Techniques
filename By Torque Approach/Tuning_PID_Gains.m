@@ -17,14 +17,15 @@ k3 = M_c*R_w*L_c;
 k4 = M_c*L_c*g;
 k5 = (k1*k2) - (k3^2);
 
-% Defining plant transfer function using numerator and denominator coefficients
+% thetaC transfer function
+% Defining transfer function using numerator and denominator coefficients
 numeratorCoeffs = [-((k1+k3)/k5)];        
 denominatorCoeffs = [1 0 -((k2*k4)/k5)];
 plantTF = tf(numeratorCoeffs, denominatorCoeffs);
 
-% Print the plant transfer function
-disp('Plant Transfer Function:');
-plantTF          
+% Print the transfer function
+disp('thetaC Transfer Function:');
+plantTF 
 
 % Tune the PID controller using pidtune
 [pidControllerTuned, tuningInfo] = pidtune(plantTF, 'PID');
