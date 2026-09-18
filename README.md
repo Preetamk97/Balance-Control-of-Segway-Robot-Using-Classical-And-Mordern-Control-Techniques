@@ -125,8 +125,8 @@ GitHub does not render `<video>` tags or play `.mp4` files inline inside a READM
 
 Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
-![LQR Manual Position v/s Time Graph](By%20Force%20Approach\Results\LQR-Manual_Postion-Time-Graph.png) <br>
-![LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach\Results\LQR-Manual-TiltAngle-Time_Graph.png)
+![LQR Manual Position v/s Time Graph](By%20Force%20Approach/Results/LQR-Manual_Postion-Time-Graph.png) <br>
+![LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach/Results/LQR-Manual-TiltAngle-Time_Graph.png)
 
 ### By Force Approach — LQR Controller (GA-Optimized Q, R)
 
@@ -134,9 +134,9 @@ Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Forc
 
 Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
-![GA Optimised LQR Manual Position v/s Time Graph](By%20Force%20Approach\Genetic%20Algorithm%20for%20LQR\GA_Results\Position-Time-Graph.png)
+![GA Optimised LQR Manual Position v/s Time Graph](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/GA_Results/Position-Time-Graph.png)
 
-![GA Optimised LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach\Genetic%20Algorithm%20for%20LQR\GA_Results\Chassis-TiltAngle-Time-Graph.png)
+![GA Optimised LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/GA_Results/Chassis-TiltAngle-Time-Graph.png)
 
 ### GA Optimization Results
 
@@ -154,7 +154,7 @@ Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Forc
 
 Full-quality video: [`Segway_Robot_Using_PID_Controller_By_Torque.mp4`](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.mp4)
 
-![PID Controller Position v/s Time Graph](By%20Torque%20Approach\Results\PID-Graph.png)
+![PID Controller Position v/s Time Graph](By%20Torque%20Approach/Results/PID-Graph.png)
 
 ## Author
 
