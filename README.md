@@ -125,17 +125,18 @@ GitHub does not render `<video>` tags or play `.mp4` files inline inside a READM
 
 Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
+![LQR Manual Position v/s Time Graph](By%20Force%20Approach\Results\LQR-Manual_Postion-Time-Graph.png) <br>
+![LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach\Results\LQR-Manual-TiltAngle-Time_Graph.png)
+
 ### By Force Approach — LQR Controller (GA-Optimized Q, R)
 
 ![LQR Controller Simulation - GA Optimized Q,R](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force_GA.gif)
 
 Full-quality video: [`Segway_Robot_Using_LQR_Controller_By_Force.mp4`](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/Segway_Robot_Using_LQR_Controller_By_Force.mp4)
 
-### By Torque Approach — PID Controller
+![GA Optimised LQR Manual Position v/s Time Graph](By%20Force%20Approach\Genetic%20Algorithm%20for%20LQR\GA_Results\Position-Time-Graph.png)
 
-![PID Controller Simulation - Torque Approach](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.gif)
-
-Full-quality video: [`Segway_Robot_Using_PID_Controller_By_Torque.mp4`](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.mp4)
+![GA Optimised LQR Manual Chasis Tilt Angle v/s Time Graph](By%20Force%20Approach\Genetic%20Algorithm%20for%20LQR\GA_Results\Chassis-TiltAngle-Time-Graph.png)
 
 ### GA Optimization Results
 
@@ -145,7 +146,15 @@ Full-quality video: [`Segway_Robot_Using_PID_Controller_By_Torque.mp4`](By%20Tor
 
 **Pareto-optimal solutions table** (`q1, q2, q3, q4, r, K, Cost1, Cost2`):
 
-![GA Final Results](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/GA_Results/GA_Final_Results.png)
+![GA Final Results](By%20Force%20Approach/Genetic%20Algorithm%20for%20LQR/GA_Results/GA_Final_Results_Marked.png)
+
+### By Torque Approach — PID Controller
+
+![PID Controller Simulation - Torque Approach](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.gif)
+
+Full-quality video: [`Segway_Robot_Using_PID_Controller_By_Torque.mp4`](By%20Torque%20Approach/Segway_Robot_Using_PID_Controller_By_Torque.mp4)
+
+![PID Controller Position v/s Time Graph](By%20Torque%20Approach\Results\PID-Graph.png)
 
 ## Author
 
